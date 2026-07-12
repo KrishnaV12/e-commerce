@@ -1,5 +1,6 @@
 .control {
   appearance: none;
+  width: 100%;
   padding: 9px 12px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -11,19 +12,25 @@
 }
 .control:focus-visible {
   outline: none;
+  width: 100%;
   border-color: var(--color-accent);
   box-shadow: var(--ring);
 }
 .link-btn {
-  background: none;
-  border: 0;
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 13px;
-  padding: 4px;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface-alt);
+  color: var(--green-500);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  height: 35px;
+  margin-top: 23px;
 }
 .link-btn:hover {
-  text-decoration: underline;
+  background: var(--green-100);
 }
 
 .icon-btn {
@@ -80,7 +87,7 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 18px;
 }
 
@@ -115,7 +122,7 @@
 .card__category {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 11px;
