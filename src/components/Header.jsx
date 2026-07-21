@@ -4,6 +4,7 @@ import {
   setMinRating,
   setSort,
   resetFilters,
+  saleToggle,
 } from "../features/filtersSlice";
 import { CATEGORIES } from "../api/mockApi";
 import ThemeToggle from "./ThemeToggle";
@@ -88,6 +89,20 @@ export default function Header({ onOpenFavorites }) {
           >
             Reset
           </button>
+
+          
+        </div>
+         <div className="field">
+        
+          <button
+            type="button"
+            className="link-btn"
+            onClick={() => dispatch(saleToggle())}
+          >
+            SaleToggle
+          </button>
+
+          
         </div>
       </div>
     </header>

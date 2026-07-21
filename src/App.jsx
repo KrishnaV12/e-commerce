@@ -9,7 +9,7 @@ import FavoritesDrawer from "./components/FavouriteDrawer";
 export default function App() {
   const theme = useSelector((s) => s.ui.theme);
   const [drawerOpen, setDrawerOpen] = useState(false);
-
+  const {showSaleOnly} = useSelector((state)=> state.filters)
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
@@ -29,6 +29,8 @@ export default function App() {
     onLoadMore: fetchNextPage,
     canLoadMore: hasNextPage && !isFetchingNextPage,
   });
+
+  const saleFilterItems = items?.filter(item => !showSaleOnly || item.sale === true)
 
   return (
     <div className="app">
@@ -60,7 +62,7 @@ export default function App() {
                 <p className="muted">Try a different category or rating.</p>
               </div>
             ) : (
-              <ProductGrid items={items} />
+              <ProductGrid items={saleFilterItems} />
             )}
 
             <div className="sentinel">

@@ -215,6 +215,13 @@
   opacity: 1;
 }
 
+.original-price_sale {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Infinite-scroll sentinel + states */
 .sentinel {
   display: flex;

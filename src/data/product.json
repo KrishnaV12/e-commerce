@@ -2,14 +2,18 @@
   {
     "id": 48,
     "name": "The Pragmatic Programmer",
+    "sale": true,
     "category": "Books",
     "price": 94.87,
+    "salePrize": 50.0,
     "rating": 3.8,
     "image": "https://picsum.photos/seed/gc48/400/300"
   },
   {
     "id": 27,
     "name": "Cotton T-Shirt",
+    "sale": true,
+    "salePrize": 50.0,
     "category": "Clothing",
     "price": 138.45,
     "rating": 4.5,
@@ -18,6 +22,8 @@
   {
     "id": 25,
     "name": "Linen Napkins",
+    "sale": true,
+    "salePrize": 30.0,
     "category": "Home",
     "price": 235.59,
     "rating": 3.6,
@@ -27,6 +33,8 @@
     "id": 35,
     "name": "Rain Jacket",
     "category": "Clothing",
+    "sale": true,
+    "salePrize": 40.0,
     "price": 155.92,
     "rating": 4.3,
     "image": "https://picsum.photos/seed/gc35/400/300"
@@ -35,6 +43,8 @@
     "id": 8,
     "name": "USB-C Hub",
     "category": "Electronics",
+    "sale": true,
+    "salePrize": 30.0,
     "price": 46.63,
     "rating": 3.4,
     "image": "https://picsum.photos/seed/gc8/400/300"
@@ -418,7 +428,7 @@
   {
     "id": 40,
     "name": "Dumbbell Pair",
-    "category": "Sports",
+    "category": "Sale",
     "price": 15.04,
     "rating": 3.9,
     "image": "https://picsum.photos/seed/gc40/400/300"
@@ -426,7 +436,31 @@
   {
     "id": 24,
     "name": "Coffee Grinder",
-    "category": "Home",
+    "category": "Sale",
+    "price": 171.86,
+    "rating": 4.8,
+    "image": "https://picsum.photos/seed/gc24/400/300"
+  },
+  {
+    "id": 25,
+    "name": "Coffee Grinder",
+    "category": "Sale",
+    "price": 171.86,
+    "rating": 4.8,
+    "image": "https://picsum.photos/seed/gc24/400/300"
+  },
+  {
+    "id": 26,
+    "name": "Coffee Grinder",
+    "category": "Sale",
+    "price": 171.86,
+    "rating": 4.8,
+    "image": "https://picsum.photos/seed/gc24/400/300"
+  },
+  {
+    "id": 27,
+    "name": "Coffee Grinder",
+    "category": "Sale",
     "price": 171.86,
     "rating": 4.8,
     "image": "https://picsum.photos/seed/gc24/400/300"
